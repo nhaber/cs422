@@ -1,1 +1,155 @@
-<h1>Hello Seamworld!</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stanford University CS422: Interactive and Embodied Learning</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+  <!-- Google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+ --></head>
+
+<div id="header">
+ <h1>CS422: Interactive and Embodied Learning</h1>
+  <div class='text-center'>
+    <h3>Winter 2021</h3>
+  </div>
+  <div class='text-center'>
+    <h3>Instructors: Nick Haber & Fei-Fei Li (office hours by appointment: <a href="mailto:nhaber@stanford.edu">nhaber@stanford.edu</a>)
+    </h3>
+  </div>
+
+  <div style="clear:both;"></div>
+</div>
+
+<div id="teaser">
+	<img src="images/igibson_sample.png" alt="Image of AI agents learning interactively" style="width:60%;"
+	 class = "center">
+
+</div>
+
+<div class="sechighlight">
+<div class="container sec">
+  <h2>Course Description</h2>
+
+  <div id="coursedesc">
+<p>Most successful machine learning algorithms of today use either carefully curated, human-labeled datasets, or large amounts of experience aimed at achieving well-defined goals within specific environments. In contrast, people learn through their agency: they interact with their environments, exploring and building complex mental models of their world so as to be able to flexibly adapt to a wide variety of tasks. One crucial next direction in artificial intelligence is to create artificial agents that learn in this flexible and robust way. Class will be a seminar, with discussion. Students will read and take turns presenting current works, and they will produce a proposal of a feasible next research direction. Topics build upon reinforcement learning techniques and include intrinsic motivation, model-based RL, hierarchical RL, physical simulation, self-supervised representation learning, multi-agent RL, grounded language learning, emergent communication, and optimal experiment design, with an eye towards learning complementary topics we see as fertile ground for new research.</p>
+
+<p>The primary goal of this course is to provide a survey of techniques related to agents learning rich models of their world through interaction. Readings and discussions have been planned with an eye towards germinating new work, and the project component should serve as a way to get started. The course is suitable for students looking to dive into recent works (from e.g. NeurIPS, ICML, and ICLR). Students should walk away from the course understanding not only relevant state-of-the-art approaches, but also its limitations, gaps in our understanding, benchmarks waiting to be created, and useful methods waiting to be fruitfully combined. This is an exciting, rapidly-growing field with many opportunities to quickly get started!</p>
+  </div>
+</div>
+</div>
+
+<div class="container sec">
+  <h2>Prerequisites</h2>
+  <ul>
+    <li><span class="spanh">Willing to read current AI literature (from e.g. NeurIPS, ICML, ICLR)</span><br>If not a experienced in this, at least at a point where you're willing to learn this skill.</li>
+    <li><span class="spanh">Proficiency in Python, and ideally Tensorflow or PyTorch</span> <br> No assignments require this, but you will get a great deal more out of the course (and potentially make more compelling presentations and project) if you can e.g. look over a paper's github repo and play.</li>
+    <li><span class="spanh">Knowledge in linear algebra, calculus, and statistics (MATH 19, 41, or 51, CS 109, or equivalent)</span><br>Again, no assignments require this, but you will get a great deal more out of readings if you are comfortable with these concepts.</li>
+    <li><span class="spanh">CS 229, 231N, 234, or equivalent</span><br> Deep reinforcement learning will play a key role.</li>
+  </ul>
+</div>
+
+
+<div class="sechighlight">
+<div class="container sec">
+  <h2>Student responsibilities</h2>
+
+  <div id="studentresp">
+<p>Students will read required papers for each class, and students/groups of students (depending on enrollment) will take turns presenting. Note: each class has a required paper as well as a number of supplementary papers. The supplementary lists can get quite long -- this is not meant to be imposing! We simply think that each represents a handy constellation of papers for those interested in getting more acquainted with each subarea. We will try to provide a roadmap as we go, and feel free to ask for more context!</p>
+
+<p>Students will produce a 6-8 page research proposal exploring a feasible next direction in depth. These will be “peer reviewed” by fellow students.</p>
+</div>
+</div>
+</div>
+
+<div class="container sec">
+  <h2>Topics at-a-glance</h2>
+
+<p>For full details including required papers and supplemental sources, please see <a href="readings.html">readings.</a><br>
+Topics (particularly the later, more special-topic-oriented classes) subject to modification.
+</p>
+<h3>Framing and basic computational considerations</h3>
+  <ul>
+  	<li>Class 1: conceptual framing, reading and project organization</li>
+  	<li>Class 2: Early attempts: world models, intrinsic motivations, behavioral & performance metrics</li>
+  </ul>
+<h3>Learning about embodiment and environment through interaction</h3>
+	<h5>Exploring intrinsic motivation signals</h5>
+	  <ul>
+	  	<li>Class 3: First deep RL self-supervised intrinsic motivation methods, failure modes of intrinsic motivation methods (e.g. “white noise problem”), evaluating benchmarks</li>
+	  	<li>Class 4: Successive deep RL intrinsic motivation methods, MuJoCo & real robotics benchmarks, continued analysis of failure modes</li>
+  </ul>
+ 	<h5>World model learning and model-based RL</h5>
+	  <ul>
+	  	<li>Class 5: Learning world models, planning with world models, and pitfalls of model-based approaches</li>
+	  	<li>Class 6: Intrinsic motivation, exploration, and model-based RL, DeepMind Control Suite benchmark</li>
+  </ul>
+  	<h5>Goal-based approaches and active inference
+</h5>
+	  <ul>
+	  	<li>Class 7: Goal-based intrinsic motivation and hierarchical RL, procedurally-generated maze environments</li>
+	  	<li>Class 8: Active inference</li>
+  </ul>
+<h3>Learning about objects and physics through interaction
+</h3>
+	  <ul>
+	  	<li>Class 9: Self-supervised models of real-world objects and physics, challenges in pixel space, towards end-to-end training</li>
+	  	<li>Class 10: Learning self-supervised models of real-world objects and physics through interaction, benchmarking interactive learning</li>
+  </ul>
+<h3>Learning sensory representations through interaction
+</h3>
+	  <ul>
+	  	<li>Class 11: First approaches to self-supervised visual representation learning, how to benchmark visual representations, “leave info out” approaches.</li>
+	  	<li>Class 12: State-of-the-art self-supervised visual representation learning, first attempts at learning visual representations through interaction</li>
+  </ul>
+<h3>Learning about other agents through interaction
+</h3>
+	  <ul>
+	  	<li>Class 13: Self-supervised prediction of other agents, theory of mind, and multi-agent RL with cooperation and competition
+</li>
+	  	<li>Class 14: Intrinsic motivation and multi-agent reinforcement learning
+</li>
+  </ul>
+<h3>Learning language through interaction</h3>
+	  <ul>
+	  	<li>Class 15: Grounded language learning</li>
+	  	<li>Class 16: Language as a cognitive tool, emergent communication</li>
+  </ul>
+<h3>Higher-level inquiry through interaction</h3>
+	  <ul>
+	  	<li>Class 17: Optimal experimental design, active learning, and their relation to intrinsically-motivated RL</li>
+	  	<li>Class 18: Human curiosity and internet search</li>
+  </ul>
+<h3>Complementary methods</h3>
+	  <ul>
+	  	<li>Class 19: Agent57, catastrophic forgetting, hindsight experience replay, environment design</li>
+	  	<li>Class 20: Compositionality and planning, nonstationarity</li>
+  </ul>
+</div>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

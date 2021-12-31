@@ -26,14 +26,16 @@
   <br>
  <h1>CS422: Interactive and Embodied Learning</h1>
   <div class='text-center'>
-    <h3>Winter 2021 (Note: Winter 2022 content coming soon!)</h3>
+    <h3>Winter 2022</h3>
   </div>
   <div class='text-center'>
     <h3>Instructors: Nick Haber & Fei-Fei Li
     </h3>
   <div class='text-center'>
-    <h3>Meeting times: Tuesday, Thursday 2:30 - 3:50 PM (Zoom details provided on <a href="https://canvas.stanford.edu/courses/132061" target="_blank" rel="noopener noreferrer">Canvas</a>.)
+    <h3>Meeting times: Mo We 1:30 - 3p
     </h3>
+    <h3>Location: CERAS 308 (location subject to change)</h3>
+    <h3>Note: first two weeks all-online, zoom details provided on <a href="https://canvas.stanford.edu/courses/149726" target="_blank" rel="noopener noreferrer">Canvas</a></h3>.
   </div>
 
 
@@ -52,9 +54,11 @@
   <h2>Course Description</h2>
 
   <div id="coursedesc">
-<p>Most successful machine learning algorithms of today use either carefully curated, human-labeled datasets, or large amounts of experience aimed at achieving well-defined goals within specific environments. In contrast, people learn through their agency: they interact with their environments, exploring and building complex mental models of their world so as to be able to flexibly adapt to a wide variety of tasks. One crucial next direction in artificial intelligence is to create artificial agents that learn in this flexible and robust way. Class will be a seminar, with discussion. Students will read and take turns presenting current works, and they will produce a proposal of a feasible next research direction. Topics build upon reinforcement learning techniques and include intrinsic motivation, model-based RL, hierarchical RL, physical simulation, self-supervised representation learning, multi-agent RL, grounded language learning, emergent communication, and optimal experiment design, with an eye towards learning complementary topics we see as fertile ground for new research.</p>
+<p>Most successful machine learning algorithms of today use either carefully curated, human-labeled datasets, or large amounts of experience aimed at achieving well-defined goals within specific environments. In contrast, people learn through their agency: they interact with their environments, exploring and building complex mental models of their world so as to be able to flexibly adapt to a wide variety of tasks. One crucial next direction in artificial intelligence is to create artificial agents that learn in this flexible and robust way. Class will be a seminar, with discussion. Students will read and take turns presenting current works, and they will produce a proposal of a feasible next research direction. Topics build upon reinforcement learning techniques and include intrinsic motivation, model-based RL, self-supervised representation learning, multi-agent RL, human-AI interaction, and emergent communication.</p>
 
-<p>The primary goal of this course is to provide a survey of techniques related to agents learning rich models of their world through interaction. Readings and discussions have been planned with an eye towards germinating new work, and the project component should serve as a way to get started. The course is suitable for students looking to dive into recent works (from e.g. NeurIPS, ICML, and ICLR). Students should walk away from the course understanding not only relevant state-of-the-art approaches, but also its limitations, gaps in our understanding, benchmarks waiting to be created, and useful methods waiting to be fruitfully combined. This is an exciting, rapidly-growing field with many opportunities to quickly get started!</p>
+<p>The primary goal of this course is to provide a survey of techniques related to agents learning rich models of their world through interaction. Readings and discussions are planned with an eye towards germinating new work, and the project component should serve as a way to get started. The course is suitable for students looking to dive into recent works (from e.g. NeurIPS, ICML, and ICLR). Students should walk away from the course understanding not only relevant state-of-the-art approaches, but also its limitations, gaps in our understanding, benchmarks waiting to be created, and useful methods waiting to be fruitfully combined. This is an exciting, rapidly-growing field with many opportunities to quickly get started!</p>
+
+<p>As a seminar in which we continually update readings, this course is intended to be suitable for repeated enrollment. See the <a href="2021/index.html" target="_blank" rel="noopener noreferrer">2021 offering here</a>.</p>
   </div>
 </div>
 </div>
@@ -74,8 +78,8 @@
   <div class="row">
     <div class="col-md-4">
       <h2>Class time</h2>
-      Winter quarter, 2021<br>
-      Tu, Th 2:30 - 3:50
+      Winter quarter, 2022<br>
+      Mo, We 1:30-3p
     </div>
     <div class="col-md-4">
       <h2>Office hours</h2>
@@ -84,13 +88,13 @@
     </div>
     <div class="col-md-4">
       <h2>Forum, Zoom link, project submissions</h2>
-        Visit our <a href="https://canvas.stanford.edu/courses/132061" target="_blank" rel="noopener noreferrer">Canvas page.</a>
+        Visit our <a href="https://canvas.stanford.edu/courses/149726" target="_blank" rel="noopener noreferrer">Canvas page.</a>
     </div>
     <div class="col-md-4">
       <h2>Readings</h2>
-      Detailed <a href="readings.html">readings & syllabus</a> page.<br>
-      Required readings in <b>bold</b>.<br>
-      Contents subject to change.
+      Coming soon.
+      See <a href="readings.html">last year's</a> page,<br>
+      but we will avoid repetition.<br>
     </div>
     <div class="col-md-4">
       <h2>Grading</h2>
@@ -124,66 +128,16 @@
 <div class="container sec">
   <h2>Topics at-a-glance</h2>
 
-<p>For full details including required papers and supplemental sources, please see <a href="readings.html">readings.</a><br>
-Topics (particularly the later, more special-topic-oriented classes) subject to modification.
+<p>Full details of required papers and supplemental sources forthcoming. To get an idea, please see <a href="readings.html">last year's readings</a>. We will avoid repetition of required papers and add several new ones<br>, and this year will feature 1-2 guest speakers.
+Topics subject to modification.
 </p>
-<h3>Framing and basic computational considerations</h3>
-  <ul>
-  	<li>Class 1: conceptual framing, reading and project organization</li>
-  	<li>Class 2: Early attempts: world models, intrinsic motivations, behavioral & performance metrics</li>
-  </ul>
-<h3>Learning about embodiment and environment through interaction</h3>
-	<h5>Exploring intrinsic motivation signals</h5>
-	  <ul>
-	  	<li>Class 3: First deep RL self-supervised intrinsic motivation methods, failure modes of intrinsic motivation methods (e.g. “white noise problem”), evaluating benchmarks</li>
-	  	<li>Class 4: Successive deep RL intrinsic motivation methods, MuJoCo & real robotics benchmarks, continued analysis of failure modes</li>
-  </ul>
- 	<h5>World model learning and model-based RL</h5>
-	  <ul>
-	  	<li>Class 5: Learning world models, planning with world models, and pitfalls of model-based approaches</li>
-	  	<li>Class 6: Intrinsic motivation, exploration, and model-based RL, DeepMind Control Suite benchmark</li>
-  </ul>
-  	<h5>Goal-based approaches and active inference
-</h5>
-	  <ul>
-	  	<li>Class 7: Goal-based intrinsic motivation and hierarchical RL, procedurally-generated maze environments</li>
-	  	<li>Class 8: Active inference</li>
-  </ul>
-<h3>Learning about other agents through interaction
-</h3>
-    <ul>
-      <li>Class 9: Self-supervised prediction of other agents, theory of mind, and multi-agent RL with cooperation and competition
-</li>
-      <li>Class 10: Intrinsic motivation and multi-agent reinforcement learning
-</li>
-  </ul>
-<h3>Complementary methods</h3>
-    <ul>
-      <li>Class 11: Agent57, catastrophic forgetting, hindsight experience replay, environment design</li>
-      <li>Class 12: Compositionality and planning, nonstationarity</li>
-  </ul>
-<h3>Learning about objects and physics through interaction
-</h3>
-	  <ul>
-	  	<li>Class 13: Self-supervised models of real-world objects and physics, challenges in pixel space, towards end-to-end training</li>
-	  	<li>Class 14: Learning self-supervised models of real-world objects and physics through interaction, benchmarking interactive learning</li>
-  </ul>
-<h3>Learning sensory representations through interaction
-</h3>
-	  <ul>
-	  	<li>Class 15: First approaches to self-supervised visual representation learning, how to benchmark visual representations, “leave info out” approaches.</li>
-	  	<li>Class 16: State-of-the-art self-supervised visual representation learning, first attempts at learning visual representations through interaction</li>
-  </ul>
-<h3>Learning language through interaction</h3>
-	  <ul>
-	  	<li>Class 17: Grounded language learning</li>
-	  	<li>Class 18: Language as a cognitive tool, emergent communication</li>
-  </ul>
-<h3>Higher-level inquiry through interaction</h3>
-	  <ul>
-	  	<li>Class 19: Optimal experimental design, active learning, and their relation to intrinsically-motivated RL</li>
-	  	<li>Class 20: Human curiosity and internet search</li>
-  </ul>
+<h3>Unit 1: Framing and basic computational considerations</h3>
+<p>Conceptual framing, early attempts: world models, intrinsic motivation, behavior and performance metrics</p>
+<h3>Unit 2: Learning about embodiment and environment through interaction</h3>
+<p>Model-based reinforcement learning, skill learning, exploration, and their combination.</p>
+<h3>Unit 3: Learning about other agents through interaction</h3>
+<p>Self-supervised prediction of other agents, theory of mind, multi-agent RL methods in cooperative and competitive scenarios, emergent communication, human-AI interaction.</p>
+
 </div>
 </div>
 

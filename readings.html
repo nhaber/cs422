@@ -22,345 +22,132 @@
   <div class='text-right'><h2><a href="index.html" style="color: black; text-decoration: none;">CS422: Interactive and Embodied Learning</a></h2>
 </div>
 
-  <h1>Readings</h1>
+  <h1>Syllabus and readings</h1>
   <div class='text-center'>
-    <p>Required readings in <b>bold</b>; others supplementary. The supplementary lists can get quite long -- this is not meant to be imposing! We simply think that each represents a handy constellation of papers for those interested in getting more acquainted with each subarea. We will provide a roadmap as we go with overviews in class. Feel free to ask for more context at any time!
+    <p>Required readings in <b>bold</b>; others supplementary. The supplementary lists can get quite long -- this is not meant to be imposing! We simply think that each represents a handy constellation of papers for those interested in getting more acquainted with each subarea. We will provide a roadmap as we go with overviews in class. Feel free to ask for more context at any time.
+    </p>
+
+    <p>
+      Please see <a href="talk_faq.html">these guidelines</a> for giving a good talk. Every student is responsible for doing all required readings. Please come prepared to discuss, and come being able to describe background, methodology, experimental setups, and key results (for experimental papers). For non-experimental papers, be prepared to discuss the background and each key idea. 
+
     </p>
   </div>
 
 <div class="sechighlight">
 <div class="container sec">
-<h2>Framing and basic computational considerations</h2>
-<h3>Class 1: Conceptual framing, reading and project organization</h3>
-<h3>Class 2: Early attempts: world models, intrinsic motivations, behavioral & performance metrics</h3>
-<a href="https://www.fil.ion.ucl.ac.uk/~karl/The%20free-energy%20principle%20A%20unified%20brain%20theory.pdf" target="_blank" rel="noopener noreferrer">Friston, Karl. "The free-energy principle: a unified brain theory?." Nature reviews neuroscience 11, no. 2 (2010): 127-138.</a><br>
-<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4193662/" target="_blank" rel="noopener noreferrer">Gottlieb, Jacqueline, Pierre-Yves Oudeyer, Manuel Lopes, and Adrien Baranes. "Information-seeking, curiosity, and attention: computational and neural mechanisms." Trends in cognitive sciences 17, no. 11 (2013): 585-593.</a><br>
-<b><a href="http://www.pyoudeyer.com/ims.pdf" target="_blank" rel="noopener noreferrer">Oudeyer, Pierre-Yves, Frdric Kaplan, and Verena V. Hafner. "Intrinsic motivation systems for autonomous mental development." IEEE transactions on evolutionary computation 11, no. 2 (2007): 265-286.</a></b><br>
-<a href="http://people.idsia.ch/~juergen/ieeecreative.pdf" target="_blank" rel="noopener noreferrer">Schmidhuber, Jürgen. "Formal theory of creativity, fun, and intrinsic motivation (1990–2010)." IEEE Transactions on Autonomous Mental Development 2, no. 3 (2010): 230-247.</a><br>
-<a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2017.02124/full" target="_blank" rel="noopener noreferrer">Smith, Linda B., and Lauren K. Slone. "A developmental approach to machine learning?." Frontiers in psychology 8 (2017): 2124.</a><br>
-<a href="https://psycnet.apa.org/fulltext/2017-42390-001.html" target="_blank" rel="noopener noreferrer">Dweck, Carol S. "From needs to goals and representations: Foundations for a unified theory of motivation, personality, and development." Psychological review 124, no. 6 (2017): 689.</a><br>
-<a href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.1467-7687.2007.00569.x" target="_blank" rel="noopener noreferrer">Spelke, Elizabeth S., and Katherine D. Kinzler. "Core knowledge." Developmental science 10, no. 1 (2007): 89-96.</a><br>
+<h2>Framing</h2>
+<h3>Class 1 (Jan 9): Conceptual framing, reading and project organization, expectations.</h3>
+<h3>Class 2 (Jan 11): An early relevant on curiosity and world model building. Instructor presents as a model for future presentations.</h3>
+<b><a href="https://ieeexplore.ieee.org/document/4141061" target="_blank" rel="noopener noreferrer">Intrinsic Motivation Systems for Autonomous Mental Development</a></b><br>
+Supplementary:<br>
+<a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2017.02124/full" target="_blank" rel="noopener noreferrer">A Developmental Approach to Machine Learning?</a><br>
+<h3>Class 3 (Jan 18): Benchmarks and representations: an introduction. (Instructor lecture)</h3>
+Supplementary:<br>
+<a href="https://psycnet.apa.org/fulltext/2017-42390-001.html" target="_blank" rel="noopener noreferrer">From Needs to Goals and Representations: Foundations for a Unified Theory of Motivation, Personality, and Development</a><br>
+<a href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.1467-7687.2007.00569.x" target="_blank" rel="noopener noreferrer">Core Knowledge</a><br>
+<h3>Class 4 (Jan 23): Project pitches.
 </div>
 </div>
+
 
 <div class="container sec">
-<h2>Learning about environment and embodiment through interaction (3 weeks)</h2>
-<h3>Class 3: First deep RL self-supervised intrinsic motivation methods, failure modes of intrinsic motivation methods (e.g. “white noise problem”), evaluating benchmarks</h3>
-<a href="https://arxiv.org/abs/1703.01732" target="_blank" rel="noopener noreferrer">Achiam, Joshua, and Shankar Sastry. "Surprise-based intrinsic motivation for deep reinforcement learning." arXiv preprint arXiv:1703.01732 (2017).</a><br>
-<a href="https://arxiv.org/abs/1808.04355" target="_blank" rel="noopener noreferrer">Burda, Yuri, Harri Edwards, Deepak Pathak, Amos Storkey, Trevor Darrell, and Alexei A. Efros. "Large-scale study of curiosity-driven learning." arXiv preprint arXiv:1808.04355 (2018).
-</a><br>
-<a href="https://arxiv.org/abs/1802.06070" target="_blank" rel="noopener noreferrer">Eysenbach, Benjamin, Abhishek Gupta, Julian Ibarz, and Sergey Levine. "Diversity is all you need: Learning skills without a reward function." arXiv preprint arXiv:1802.06070 (2018).
-</a><br>
-<a href="https://arxiv.org/abs/1605.09674" target="_blank" rel="noopener noreferrer">Houthooft, Rein, Xi Chen, Yan Duan, John Schulman, Filip De Turck, and Pieter Abbeel. "Vime: Variational information maximizing exploration." In Advances in Neural Information Processing Systems, pp. 1109-1117. 2016.</a><br>
-<b><a href="https://arxiv.org/abs/1705.05363" target="_blank" rel="noopener noreferrer">Pathak, Deepak, Pulkit Agrawal, Alexei A. Efros, and Trevor Darrell. "Curiosity-driven exploration by self-supervised prediction." In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops, pp. 16-17. 2017.</a></b><br>
+<h2>Benchmarks</h2>
+<h3>Class 5 (Jan 25) Diverse environments with many tasks. (Student presentation 1)</h3>
+<b><a href="https://openreview.net/pdf?id=_8DoIe8G3t" target="_blank" rel="noopener noreferrer">BEHAVIOR-1K: A Benchmark for Embodied AI with 1,000 Everyday Activities and Realistic Simulation</a></b><br>
+Supplementary:<br>
+<a href="https://arxiv.org/abs/2108.03332" target="_blank" rel="noopener noreferrer">BEHAVIOR: Benchmark for Everyday Household Activities in Virtual, Interactive, and Ecological Environments</a><br>
+<a href="https://arxiv.org/abs/2007.04954" target="_blank" rel="noopener noreferrer">ThreeDWorld: A Platform for Interactive Multi-Modal Physical Simulation</a><br>
+<a href="https://arxiv.org/abs/1910.10897" target="_blank" rel="noopener noreferrer">Meta-World: A Benchmark and Evaluation for Multi-Task and Meta Reinforcement Learning</a><br>
+<a href="https://arxiv.org/abs/2107.08170" target="_blank" rel="noopener noreferrer">Megaverse: Simulating Embodied Agents at One Million Experiences per Second</a><br>
 
 
-<h3>Class 4: Successive deep RL intrinsic motivation methods, MuJoCo & real robotics benchmarks, continued analysis of failure modes</h3>
-<a href="https://arxiv.org/abs/1912.05510" target="_blank" rel="noopener noreferrer">Berseth, Glen, Daniel Geng, Coline Devin, Chelsea Finn, Dinesh Jayaraman, and Sergey Levine. "SMiRL: Surprise Minimizing RL in Dynamic Environments." arXiv preprint arXiv:1912.05510 (2019).</a><br>
-<a href="https://arxiv.org/abs/1810.12894" target="_blank" rel="noopener noreferrer">Burda, Yuri, Harrison Edwards, Amos Storkey, and Oleg Klimov. "Exploration by random network distillation." arXiv preprint arXiv:1810.12894 (2018).
-</a><br>
-<b><a href="https://arxiv.org/abs/1906.04161" target="_blank" rel="noopener noreferrer">Pathak, Deepak, Dhiraj Gandhi, and Abhinav Gupta. "Self-supervised exploration via disagreement." arXiv preprint arXiv:1906.04161 (2019).
-</a></b><br>
-<a href="https://arxiv.org/abs/2002.12292" target="_blank" rel="noopener noreferrer">Raileanu, Roberta, and Tim Rocktäschel. "RIDE: Rewarding Impact-Driven Exploration for Procedurally-Generated Environments." arXiv preprint arXiv:2002.12292 (2020).
-</a><br>
+<h3>Class 6 (Jan 30): Open-world benchmarks. (Student presentation 2)</h3>
+<b><a href="https://arxiv.org/abs/2206.08853" target="_blank" rel="noopener noreferrer">MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge</a></b><br>
+Supplementary:<br>
+<a href="https://arxiv.org/abs/2202.10583" target="_blank" rel="noopener noreferrer">MineRL Diamond 2021 Competition: Overview, Results, and Lessons Learned</a><br>
+<a href="https://arxiv.org/abs/2109.06780" target="_blank" rel="noopener noreferrer">Benchmarking the Spectrum of Agent Capabilities</a><br>
 
-<h3>Class 5: Learning world models, planning with world models, and pitfalls of model-based approaches</h3>
-<a href="https://arxiv.org/abs/1906.02736" target="_blank" rel="noopener noreferrer">Gelada, Carles, Saurabh Kumar, Jacob Buckman, Ofir Nachum, and Marc G. Bellemare. "Deepmdp: Learning continuous latent space models for representation learning." arXiv preprint arXiv:1906.02736 (2019).</a><br>
-<a href="https://arxiv.org/abs/1803.10122" target="_blank" rel="noopener noreferrer">Ha, David, and Jürgen Schmidhuber. "World models." arXiv preprint arXiv:1803.10122 (2018).
-</a><br>
-<b><a href="https://arxiv.org/abs/1912.01603" target="_blank" rel="noopener noreferrer">Hafner, Danijar, Timothy Lillicrap, Jimmy Ba, and Mohammad Norouzi. "Dream to control: Learning behaviors by latent imagination." arXiv preprint arXiv:1912.01603 (2019).
-</a></b><br>
-<a href="https://arxiv.org/abs/2010.02193" target="_blank" rel="noopener noreferrer">Hafner, Danijar, Timothy Lillicrap, Mohammad Norouzi, and Jimmy Ba. "Mastering atari with discrete world models." arXiv preprint arXiv:2010.02193 (2020).
-</a><br>
-<a href="https://arxiv.org/abs/1903.00374" target="_blank" rel="noopener noreferrer">Kaiser, Lukasz, Mohammad Babaeizadeh, Piotr Milos, Blazej Osinski, Roy H. Campbell, Konrad Czechowski, Dumitru Erhan et al. "Model-based reinforcement learning for atari." arXiv preprint arXiv:1903.00374 (2019).
-</a><br>
-<a href="https://arxiv.org/abs/2004.04136" target="_blank" rel="noopener noreferrer">Srinivas, Aravind, Michael Laskin, and Pieter Abbeel. "Curl: Contrastive unsupervised representations for reinforcement learning." arXiv preprint arXiv:2004.04136 (2020).
-</a><br>
+<h3>Class 7 (Feb 1): Some words of caution about benchmarks. (Student presentation 3)</h3>
+<b><a href="https://arxiv.org/abs/2107.07002" target="_blank" rel="noopener noreferrer">The Benchmark Lottery</a></b><br>
+Supplementary:<br>
+<a href="https://arxiv.org/abs/1709.06560" target="_blank" rel="noopener noreferrer">Deep Reinforcement Learning that Matters</a><br>
+<a href="https://arxiv.org/abs/1604.00289" target="_blank" rel="noopener noreferrer">Building Machines That Learn and Think Like People</a><br>
 
-<h3>Class 6: Intrinsic motivation, exploration, and model-based RL, DeepMind Control Suite Benchmark</h3>
-<b><a href="https://arxiv.org/abs/2005.05960" target="_blank" rel="noopener noreferrer">Sekar, Ramanan, Oleh Rybkin, Kostas Daniilidis, Pieter Abbeel, Danijar Hafner, and Deepak Pathak. "Planning to Explore via Self-Supervised World Models." arXiv preprint arXiv:2005.05960 (2020).</a></b><br>
-<a href="https://arxiv.org/abs/1810.12162" target="_blank" rel="noopener noreferrer">Shyam, Pranav, Wojciech Jaśkowski, and Faustino Gomez. "Model-based active exploration." arXiv preprint arXiv:1810.12162 (2018).
-</a><br>
-
-<h3>Class 7: Goal-based intrinsic motivation and hierarchical RL, procedurally-generated maze environments</h3>
-<b><a href="https://arxiv.org/abs/2006.12122" target="_blank" rel="noopener noreferrer">Campero, Andres, Roberta Raileanu, Heinrich Küttler, Joshua B. Tenenbaum, Tim Rocktäschel, and Edward Grefenstette. "Learning with AMIGo: Adversarially motivated intrinsic goals." arXiv preprint arXiv:2006.12122 (2020).</a></b><br>
-<a href="https://arxiv.org/abs/1705.06366" target="_blank" rel="noopener noreferrer">Florensa, Carlos, David Held, Xinyang Geng, and Pieter Abbeel. "Automatic goal generation for reinforcement learning agents." In International conference on machine learning, pp. 1515-1528. PMLR, 2018.</a><br>
-<a href="https://arxiv.org/abs/1707.05300" target="_blank" rel="noopener noreferrer">Florensa, Carlos, David Held, Markus Wulfmeier, Michael Zhang, and Pieter Abbeel. "Reverse curriculum generation for reinforcement learning." arXiv preprint arXiv:1707.05300 (2017).
-</a><br>
-<a href="https://arxiv.org/abs/1807.04742" target="_blank" rel="noopener noreferrer">Nair, Ashvin V., Vitchyr Pong, Murtaza Dalal, Shikhar Bahl, Steven Lin, and Sergey Levine. "Visual reinforcement learning with imagined goals." Advances in Neural Information Processing Systems 31 (2018): 9191-9200.
-</a><br>
-<a href="https://arxiv.org/abs/1903.03698" target="_blank" rel="noopener noreferrer">Pong, Vitchyr H., Murtaza Dalal, Steven Lin, Ashvin Nair, Shikhar Bahl, and Sergey Levine. "Skew-fit: State-covering self-supervised reinforcement learning." arXiv preprint arXiv:1903.03698 (2019).
-</a><br>
-
-<h3>Class 8: (Change of Plans!) Goals and task curricula, part 2.</h3>
-<b><a href="https://arxiv.org/abs/2007.00350" target="_blank" rel="noopener noreferrer">Fang, Kuan, Yuke Zhu, Silvio Savarese, and Li Fei-Fei. "Adaptive Procedural Task Generation for Hard-Exploration Problems." arXiv preprint arXiv:2007.00350 (2020).</a></b><br>
 </div>
 
 <div class="sechighlight">
 <div class="container sec">
-<h2>Learning about other agents through interaction</h2>
+<h2>Representations</h2>
+<h3>Class 8 (Feb 6): Offline reinforcement learning. (Student presentation 4)</h3>
+<b><a href="https://arxiv.org/abs/2106.01345" target="_blank" rel="noopener noreferrer">Decision Transformer: Reinforcement Learning via Sequence Modeling</a></b><br>
+Supplementary:<br>
+<a href="https://arxiv.org/abs/2005.01643" target="_blank" rel="noopener noreferrer">Offline Reinforcement Learning: Tutorial, Review, and Perspectives on Open Problems</a><br>
+<a href="https://arxiv.org/abs/2106.02039" target="_blank" rel="noopener noreferrer">Offline Reinforcement Learning as One Big Sequence Modeling Problem</a><br>
 
-<h3>Class 9: Self-supervised prediction of other agents, theory of mind, and multi-agent RL with cooperation and competition
-</h3>
-<a href="https://arxiv.org/abs/1909.07528" target="_blank" rel="noopener noreferrer">
-Baker, Bowen, Ingmar Kanitscheider, Todor Markov, Yi Wu, Glenn Powell, Bob McGrew, and Igor Mordatch. "Emergent tool use from multi-agent autocurricula." arXiv preprint arXiv:1909.07528 (2019).
-</a><br>
-<a href="https://arxiv.org/abs/2003.02979" target="_blank" rel="noopener noreferrer">
-Hu, Hengyuan, Adam Lerer, Alex Peysakhovich, and Jakob Foerster. "" Other-Play" for Zero-Shot Coordination." arXiv preprint arXiv:2003.02979 (2020).
-</a><br>
-<a href="https://arxiv.org/abs/1709.04326" target="_blank" rel="noopener noreferrer">
-Foerster, Jakob N., Richard Y. Chen, Maruan Al-Shedivat, Shimon Whiteson, Pieter Abbeel, and Igor Mordatch. "Learning with opponent-learning awareness." arXiv preprint arXiv:1709.04326 (2017).
-</a><br>
-<a href="https://arxiv.org/abs/1802.07740" target="_blank" rel="noopener noreferrer">
-Rabinowitz, Neil C., Frank Perbet, H. Francis Song, Chiyuan Zhang, S. M. Eslami, and Matthew Botvinick. "Machine theory of mind." arXiv preprint arXiv:1802.07740 (2018).
-</a><br>
-<b><a href="https://arxiv.org/abs/1809.11044" target="_blank" rel="noopener noreferrer">
-Tacchetti, Andrea, H. Francis Song, Pedro AM Mediano, Vinicius Zambaldi, Neil C. Rabinowitz, Thore Graepel, Matthew Botvinick, and Peter W. Battaglia. "Relational forward models for multi-agent learning." arXiv preprint arXiv:1809.11044 (2018).
-</a></b><br>
-<a href="http://iliad.stanford.edu/pdfs/publications/xie2020learning.pdf" target="_blank" rel="noopener noreferrer">
-Xie, Annie, Dylan P. Losey, Ryan Tolsma, Chelsea Finn, and Dorsa Sadigh. "Learning Latent Representations to Influence Multi-Agent Interaction." arXiv preprint arXiv:2011.06619 (2020).
-</a><br>
+<h3>Class 9 (Feb 8) The Dreamer world model. (Student presentation 5)</h3>
+<b><a href="https://arxiv.org/abs/1912.01603" target="_blank" rel="noopener noreferrer">Dream to Control: Learning Behaviors by Latent Imagination</a></b><br>
+Supplementary:<br>
+<a href="https://arxiv.org/abs/2010.02193" target="_blank" rel="noopener noreferrer">Mastering Atari with Discrete World Models</a><br>
+<a href="https://arxiv.org/abs/2206.14176" target="_blank" rel="noopener noreferrer">DayDreamer: World Models for Physical Robot Learning</a><br>
+<a href="https://arxiv.org/abs/1803.10122" target="_blank" rel="noopener noreferrer">World Models</a><br>
+<a href="https://arxiv.org/abs/1903.00374" target="_blank" rel="noopener noreferrer">Model-Based Reinforcement Learning for Atari</a><br>
 
-<h3>Class 10: Intrinsic motivation and multi-agent reinforcement learning
-</h3>
-<a href="https://arxiv.org/abs/1810.08647" target="_blank" rel="noopener noreferrer">
-Jaques, Natasha, Angeliki Lazaridou, Edward Hughes, Caglar Gulcehre, Pedro A. Ortega, D. J. Strouse, Joel Z. Leibo, and Nando de Freitas. "Intrinsic social motivation via causal influence in multi-agent RL." (2018).
-</a><br>
-<a href="https://arxiv.org/abs/2007.07853" target="_blank" rel="noopener noreferrer">
-Kim, Kun Ho. "Active world model learning in agent-rich environments with progress curiosity." Proceedings of ICML 2020 (2020).
-</a><br>
-<b><a href="https://arxiv.org/abs/2010.00581" target="_blank" rel="noopener noreferrer">
-Ndousse, Kamal, Douglas Eck, Sergey Levine, and Natasha Jaques. "Learning social learning." arXiv preprint arXiv:2010.00581 (2020).
-</a></b><br>
+
+<h3>Class 10 (Feb 13) Transformers as world models. (Student presentation 6)</h3>
+<b><a href="https://arxiv.org/abs/2209.00588" target="_blank" rel="noopener noreferrer">Transformers are Sample Efficient World Models</a></b><br>
+Supplementary:<br>
+<a href="https://arxiv.org/abs/1911.08265" target="_blank" rel="noopener noreferrer">Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model</a><br>
+<a href="https://arxiv.org/abs/2202.09481" target="_blank" rel="noopener noreferrer">Decoupling Representation Learning from Reinforcement Learning</a><br>
+<a href="https://arxiv.org/abs/2202.09481" target="_blank" rel="noopener noreferrer">TransDreamer: Reinforcement Learning with Transformer World Models</a><br>
 </div>
 </div>
 
 <div class="container sec">
-<h2>Complementary methods</h2>
+<h2>Motivations</h2>
+<h3>Class 11 (Feb 15) Synthesis so far and introduction to motivation. (Instructor lecture)</h3>
+Supplementary:<br>
+<a href="https://www.jair.org/index.php/jair/article/view/13673" target="_blank" rel="noopener noreferrer">Towards Continual Reinforcement Learning: A Review and Perspectives</a><br>
+<a href="https://arxiv.org/abs/2012.09830" target="_blank" rel="noopener noreferrer">Autotelic Agents with Intrinsically Motivated Goal-Conditioned Reinforcement Learning: a Short Survey</a><br>
+<a href="https://arxiv.org/abs/2009.01791" target="_blank" rel="noopener noreferrer">Action and Perception as Divergence Minimization</a><br>
 
-<h3>Class 11: Compositionality and planning, nonstationarity
-</h3>
-<b><a href="https://www.pnas.org/content/117/48/30079" target="_blank" rel="noopener noreferrer">
-Barreto, André, Shaobo Hou, Diana Borsa, David Silver, and Doina Precup. "Fast reinforcement learning with generalized policy updates." Proceedings of the National Academy of Sciences 117, no. 48 (2020): 30079-30087.
-</a></b><br>
-<a href="https://arxiv.org/abs/1707.06887" target="_blank" rel="noopener noreferrer">
-Bellemare, Marc G., Will Dabney, and Rémi Munos. "A distributional perspective on reinforcement learning." In Proceedings of the 34th International Conference on Machine Learning-Volume 70, pp. 449-458. JMLR. org, 2017.
-</a><br>
-<a href="https://arxiv.org/abs/1909.05829" target="_blank" rel="noopener noreferrer">
-Nair, Suraj, and Chelsea Finn. "Hierarchical foresight: Self-supervised learning of long-horizon tasks via visual subgoal generation." arXiv preprint arXiv:1909.05829 (2019).
-</a><br>
-<a href="https://arxiv.org/abs/1905.03970" target="_blank" rel="noopener noreferrer">
-Padakandla, Sindhu, and Shalabh Bhatnagar. "Reinforcement learning in non-stationary environments." arXiv preprint arXiv:1905.03970 (2019).
-</a><br>
-<a href="https://arxiv.org/abs/2011.08424" target="_blank" rel="noopener noreferrer">
-Xu, Danfei, Ajay Mandlekar, Roberto Martín-Martín, Yuke Zhu, Silvio Savarese, and Li Fei-Fei. "Deep Affordance Foresight: Planning Through What Can Be Done in the Future." arXiv preprint arXiv:2011.08424 (2020).
-</a><br>
 
-<h3>Class 12: Active inference</h3>
-<a href="http://proceedings.mlr.press/v100/okada20a.html" target="_blank" rel="noopener noreferrer">Okada, Masashi, and Tadahiro Taniguchi. "Variational inference mpc for bayesian model-based reinforcement learning." In Conference on Robot Learning, pp. 258-272. PMLR, 2020.
-</a><br>
-<b><a href="https://arxiv.org/abs/1909.10863" target="_blank" rel="noopener noreferrer">Sajid, Noor, Philip J. Ball, and Karl J. Friston. "Active inference: demystified and compared." arXiv (2019): arXiv-1909.</a></b><br>
-<a href="https://arxiv.org/abs/2002.12636" target="_blank" rel="noopener noreferrer">Tschantz, Alexander, Beren Millidge, Anil K. Seth, and Christopher L. Buckley. "Reinforcement Learning through Active Inference." arXiv preprint arXiv:2002.12636 (2020).
-</a><br>
 
-<h3>Class 13: Agent57, catastrophic forgetting, hindsight experience replay, environment design
-</h3>
-<a href="https://arxiv.org/abs/1707.01495" target="_blank" rel="noopener noreferrer">
-Andrychowicz, Marcin, Filip Wolski, Alex Ray, Jonas Schneider, Rachel Fong, Peter Welinder, Bob McGrew, Josh Tobin, OpenAI Pieter Abbeel, and Wojciech Zaremba. "Hindsight experience replay." In Advances in neural information processing systems, pp. 5048-5058. 2017.
-</a><br>
-<b><a href="https://arxiv.org/abs/2003.13350" target="_blank" rel="noopener noreferrer">
-Badia, Adrià Puigdomènech, Bilal Piot, Steven Kapturowski, Pablo Sprechmann, Alex Vitvitskyi, Daniel Guo, and Charles Blundell. "Agent57: Outperforming the atari human benchmark." arXiv preprint arXiv:2003.13350 (2020).
-</a></b><br>
-<a href="https://proceedings.neurips.cc/paper/2020/file/985e9a46e10005356bbaf194249f6856-Paper.pdf" target="_blank" rel="noopener noreferrer">
-Dennis, Michael, Natasha Jaques, Eugene Vinitsky, Alexandre Bayen, Stuart Russell, Andrew Critch, and Sergey Levine. "Emergent Complexity and Zero-shot Transfer via Unsupervised Environment Design." Advances in Neural Information Processing Systems 33 (2020).
-</a><br>
-<a href="https://arxiv.org/abs/1612.00796" target="_blank" rel="noopener noreferrer">
-Kirkpatrick, James, Razvan Pascanu, Neil Rabinowitz, Joel Veness, Guillaume Desjardins, Andrei A. Rusu, Kieran Milan et al. "Overcoming catastrophic forgetting in neural networks." Proceedings of the national academy of sciences 114, no. 13 (2017): 3521-3526.
-</a><br>
+<h3>Class 12 (Feb 22) Biological motivation motivation. (Student presentation 7)</h3>
+<b><a href="https://ieeexplore.ieee.org/document/5471106" target="_blank" rel="noopener noreferrer">Intrinsically Motivated Reinforcement Learning: An Evolutionary Perspective</a></b><br>
+Supplementary:<br>
+<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4193662/" target="_blank" rel="noopener noreferrer">Information seeking, curiosity and attention: computational and neural mechanisms</a><br>
+
+<h3>Class 13 (Feb 27) Project midpoint feedback session.</h3>
+
+<h3>Class 14 (Mar 1) Intrinsically-motivated world model learning. (Student presentation 8)</h3>
+<b><a href="https://arxiv.org/abs/2005.05960" target="_blank" rel="noopener noreferrer">Planning to Explore via Self-Supervised World Models</a></b><br>
+Supplementary:<br>
+<a href="https://arxiv.org/abs/2102.11271" target="_blank" rel="noopener noreferrer">Reinforcement Learning with Prototypical Representations</a><br>
+<a href="https://arxiv.org/abs/2007.00350" target="_blank" rel="noopener noreferrer">Adaptive Procedural Task Generation for Hard-Exploration Problems</a><br>
+<a href="https://arxiv.org/abs/1810.12162" target="_blank" rel="noopener noreferrer">Model-Based Active Exploration</a><br>
+<a href="https://arxiv.org/abs/1912.05510" target="_blank" rel="noopener noreferrer">SMiRL: Surprise Minimizing Reinforcement Learning in Unstable Environments</a><br>
+<a href="https://arxiv.org/abs/1906.04161" target="_blank" rel="noopener noreferrer">Self-Supervised Exploration via Disagreement</a><br>
+<a href="https://arxiv.org/abs/2002.12292" target="_blank" rel="noopener noreferrer">RIDE: Rewarding Impact-Driven Exploration for Procedurally-Generated Environments</a><br>
+<a href="https://arxiv.org/abs/1802.06070" target="_blank" rel="noopener noreferrer">Diversity is All You Need: Learning Skills without a Reward Function</a><br>
+<a href="https://arxiv.org/abs/1808.04355" target="_blank" rel="noopener noreferrer">Large-Scale Study of Curiosity-Driven Learning</a><br>
+<a href="https://arxiv.org/abs/1705.05363" target="_blank" rel="noopener noreferrer">Curiosity-driven Exploration by Self-supervised Prediction</a><br>
+<a href="https://arxiv.org/abs/1703.01732" target="_blank" rel="noopener noreferrer">Surprise-Based Intrinsic Motivation for Deep Reinforcement Learning</a><br>
+
+<h3>Class 15 (Mar 6) Goal-conditioned world models. (Student presentation 9)</h3>
+<b><a href="https://arxiv.org/abs/2110.09514" target="_blank" rel="noopener noreferrer">Discovering and Achieving Goals via World Models</a></b><br>
+Supplementary:<br>
+<a href="https://proceedings.neurips.cc/paper/2021/hash/69eba34671b3ef1ef38ee85caae6b2a1-Abstract.html" target="_blank" rel="noopener noreferrer">Pretraining Representations for Data-Efficient Reinforcement Learning</a><br>
+<a href="https://arxiv.org/abs/1705.06366" target="_blank" rel="noopener noreferrer">Automatic Goal Generation for Reinforcement Learning Agents</a><br>
+<a href="https://arxiv.org/abs/1807.04742" target="_blank" rel="noopener noreferrer">Visual Reinforcement Learning with Imagined Goals</a><br>
 </div>
+
 
 <div class="sechighlight">
 <div class="container sec">
-<h2>Learning sensory representations through interaction</h2>
-
-<h3>Class 14: A brief introduction to learning visual representations.</h3>
-
-<a href="https://arxiv.org/abs/2006.12373" target="_blank" rel="noopener noreferrer">
-Bear, Daniel, Chaofei Fan, Damian Mrowca, Yunzhu Li, Seth Alter, Aran Nayebi, Jeremy Schwartz et al. "Learning physical graph representations from visual scenes." Advances in Neural Information Processing Systems 33 (2020).
-</a><br>
-<a href="https://arxiv.org/abs/2002.05709" target="_blank" rel="noopener noreferrer">
-Chen, Ting, Simon Kornblith, Mohammad Norouzi, and Geoffrey Hinton. "A simple framework for contrastive learning of visual representations." arXiv preprint arXiv:2002.05709 (2020).
-</a><br>
-<a href="https://arxiv.org/abs/1811.12231" target="_blank" rel="noopener noreferrer">
-Geirhos, Robert, Patricia Rubisch, Claudio Michaelis, Matthias Bethge, Felix A. Wichmann, and Wieland Brendel. "ImageNet-trained CNNs are biased towards texture; increasing shape bias improves accuracy and robustness." arXiv preprint arXiv:1811.12231 (2018).
-</a><br>
-<a href="https://arxiv.org/abs/1803.07728" target="_blank" rel="noopener noreferrer">
-Gidaris, Spyros, Praveer Singh, and Nikos Komodakis. "Unsupervised representation learning by predicting image rotations." arXiv preprint arXiv:1803.07728 (2018).
-</a><br>
-<a href="https://arxiv.org/abs/1802.07442" target="_blank" rel="noopener noreferrer">
-Haber, Nick, Damian Mrowca, Stephanie Wang, Li F. Fei-Fei, and Daniel L. Yamins. "Learning to play with intrinsically-motivated, self-aware agents." Advances in Neural Information Processing Systems 31 (2018): 8388-8399.
-</a><br>
-<a href="https://arxiv.org/abs/1911.05722" target="_blank" rel="noopener noreferrer">
-He, Kaiming, Haoqi Fan, Yuxin Wu, Saining Xie, and Ross Girshick. "Momentum contrast for unsupervised visual representation learning." In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pp. 9729-9738. 2020.
-</a><br>
-<a href="https://arxiv.org/abs/1603.09246" target="_blank" rel="noopener noreferrer">
-Noroozi, Mehdi, and Paolo Favaro. "Unsupervised learning of visual representations by solving jigsaw puzzles." In European Conference on Computer Vision, pp. 69-84. Springer, Cham, 2016.
-</a><br>
-<a href="https://arxiv.org/abs/1906.01618" target="_blank" rel="noopener noreferrer">
-Sitzmann, Vincent, Michael Zollhöfer, and Gordon Wetzstein. "Scene representation networks: Continuous 3d-structure-aware neural scene representations." In Advances in Neural Information Processing Systems, pp. 1121-1132. 2019.
-</a><br>
-<b><a href="https://arxiv.org/abs/1804.08328" target="_blank" rel="noopener noreferrer">
-Zamir, Amir R., Alexander Sax, William Shen, Leonidas J. Guibas, Jitendra Malik, and Silvio Savarese. "Taskonomy: Disentangling task transfer learning." In Proceedings of the IEEE conference on computer vision and pattern recognition, pp. 3712-3722. 2018.
-</a></b><br>
-<a href="https://arxiv.org/abs/1903.12355" target="_blank" rel="noopener noreferrer">
-Zhuang, Chengxu, Alex Lin Zhai, and Daniel Yamins. "Local aggregation for unsupervised learning of visual embeddings." In Proceedings of the IEEE International Conference on Computer Vision, pp. 6002-6012. 2019.
-</a><br>
-<a href="https://arxiv.org/abs/1809.01649" target="_blank" rel="noopener noreferrer">
-Zou, Yuliang, Zelun Luo, and Jia-Bin Huang. "Df-net: Unsupervised joint learning of depth and flow using cross-task consistency." In Proceedings of the European conference on computer vision (ECCV), pp. 36-53. 2018.
-</a><br>
+<h2>Wrap and final presentations</h2>
+<h3>Class 16 (Mar 8): Where to from here? Instructor-led synthesis discussion.</h3>
+<h3>Class 17 (Mar 13): Final presentations, part 1.</h3>
+<h3>Class 18 (Mar 13): Final presentations, part 2.</h3>
 </div>
 </div>
-
-
-<div class="container sec">
-<h2>Learning about objects and physics through interaction</h2>
-
-<h3>Class 15, part 1: Self-supervised models of real-world objects and physics, challenges in pixel space, towards end-to-end training</h3>
-<a href="https://arxiv.org/abs/1910.02527" target="_blank" rel="noopener noreferrer">
-Armeni, Iro, Zhi-Yang He, JunYoung Gwak, Amir R. Zamir, Martin Fischer, Jitendra Malik, and Silvio Savarese. "3d scene graph: A structure for unified semantics, 3d space, and camera." In Proceedings of the IEEE International Conference on Computer Vision, pp. 5664-5673. 2019.
-</a><br>
-<a href="https://arxiv.org/abs/1612.00222" target="_blank" rel="noopener noreferrer">
-Battaglia, Peter, Razvan Pascanu, Matthew Lai, and Danilo Jimenez Rezende. "Interaction networks for learning about objects, relations and physics." Advances in neural information processing systems 29 (2016): 4502-4510.
-</a><br>
-<a href="https://papers.nips.cc/paper/2017/hash/c8862fc1a32725712838863fb1a260b9-Abstract.html" target="_blank" rel="noopener noreferrer">
-Janner, Michael, Jiajun Wu, Tejas D. Kulkarni, Ilker Yildirim, and Josh Tenenbaum. "Self-supervised intrinsic image decomposition." Advances in Neural Information Processing Systems 30 (2017): 5936-5946.
-</a><br>
-<a href="https://proceedings.neurips.cc/paper/2018/hash/fd9dd764a6f1d73f4340d570804eacc4-Abstract.html" target="_blank" rel="noopener noreferrer">
-Mrowca, Damian, Chengxu Zhuang, Elias Wang, Nick Haber, Li F. Fei-Fei, Josh Tenenbaum, and Daniel L. Yamins. "Flexible neural representation for physics prediction." In Advances in neural information processing systems, pp. 8799-8810. 2018.
-</a><br>
-<b><a href="https://arxiv.org/abs/2002.09405" target="_blank" rel="noopener noreferrer">
-Sanchez-Gonzalez, Alvaro, Jonathan Godwin, Tobias Pfaff, Rex Ying, Jure Leskovec, and Peter W. Battaglia. "Learning to simulate complex physics with graph networks." arXiv preprint arXiv:2002.09405 (2020).</a></b><br>
-<a href="https://arxiv.org/pdf/1911.01655.pdf" target="_blank" rel="noopener noreferrer">
-Villegas, Ruben, Arkanath Pathak, Harini Kannan, Dumitru Erhan, Quoc V. Le, and Honglak Lee. "High fidelity video prediction with large stochastic recurrent neural networks." arXiv preprint arXiv:1911.01655 (2019).</a><br>
-<a href="https://papers.nips.cc/paper/2016/hash/44f683a84163b3523afe57c2e008bc8c-Abstract.html" target="_blank" rel="noopener noreferrer">
-Wu, Jiajun, Chengkai Zhang, Tianfan Xue, Bill Freeman, and Josh Tenenbaum. "Learning a probabilistic latent space of object shapes via 3d generative-adversarial modeling." Advances in neural information processing systems 29 (2016): 82-90.
-</a><br>
-<a href="https://arxiv.org/abs/1911.06283" target="_blank" rel="noopener noreferrer">
-Yan, Mengyuan, Yilin Zhu, Ning Jin, and Jeannette Bohg. "Self-Supervised Learning of State Estimation for Manipulating Deformable Linear Objects." IEEE Robotics and Automation Letters 5, no. 2 (2020): 2372-2379.
-</a><br>
-
-
-<h3>Class 15, part 2: Learning self-supervised models of real-world objects and physics through interaction, benchmarking interactive learning
-</h3>
-<a href="https://arxiv.org/abs/1907.09620" target="_blank" rel="noopener noreferrer">
-Allen, Kelsey R., Kevin A. Smith, and Joshua B. Tenenbaum. "The tools challenge: Rapid trial-and-error learning in physical problem solving." arXiv preprint arXiv:1907.09620 (2019).
-</a><br>
-<a href="https://arxiv.org/abs/2011.01975" target="_blank" rel="noopener noreferrer">
-Batra, Dhruv, Angel X. Chang, Sonia Chernova, Andrew J. Davison, Jia Deng, Vladlen Koltun, Sergey Levine et al. "Rearrangement: A Challenge for Embodied AI." arXiv preprint arXiv:2011.01975 (2020).
-</a><br>
-<a href="https://arxiv.org/abs/2012.02924" target="_blank" rel="noopener noreferrer">
-Shen, Bokui, Fei Xia, Chengshu Li, Roberto Martín-Martín, Linxi Fan, Guanzhi Wang, Shyamal Buch et al. "iGibson, a Simulation Environment for Interactive Tasks in Large Realistic Scenes." arXiv preprint arXiv:2012.02924 (2020).
-</a><br>
-<a href="http://www.robotics.tu-berlin.de/fileadmin/fg170/Publikationen_pdf/EppnerMartinMartin17_RSS_WS.pdf" target="_blank" rel="noopener noreferrer">
-Eppner, Clemens, Roberto Martın-Martın, and Oliver Brock. "Physics-based selection of actions that maximize motion for interactive perception." RSS WS: Revisiting Contact-Turning a problem into a solution (2017).
-</a><br>
-<a href="https://arxiv.org/abs/2009.01439" target="_blank" rel="noopener noreferrer">
-Mandikal, Priyanka, and Kristen Grauman. "Dexterous Robotic Grasping with Object-Centric Visual Affordances." arXiv preprint arXiv:2009.01439 (2020).
-</a><br>
-<a href="https://arxiv.org/abs/1911.07482" target="_blank" rel="noopener noreferrer">
-Novkovic, Tonci, Remi Pautrat, Fadri Furrer, Michel Breyer, Roland Siegwart, and Juan Nieto. "Object finding in cluttered scenes using interactive perception." In 2020 IEEE International Conference on Robotics and Automation (ICRA), pp. 8338-8344. IEEE, 2020.
-</a><br>
-<a href="https://arxiv.org/abs/1911.00969" target="_blank" rel="noopener noreferrer">
-Shao, Lin, Toki Migimatsu, and Jeannette Bohg. "Learning to Scaffold the Development of Robotic Manipulation Skills." arXiv preprint arXiv:1911.00969 (2019).
-</a><br>
-<a href="https://arxiv.org/abs/2011.07193" target="_blank" rel="noopener noreferrer">
-Ota, Kei, Devesh K. Jha, Diego Romeres, Jeroen van Baar, Kevin A. Smith, Takayuki Semitsu, Tomoaki Oiki, Alan Sullivan, Daniel Nikovski, and Joshua B. Tenenbaum. "Towards Human-Level Learning of Complex Physical Puzzles." arXiv preprint arXiv:2011.07193 (2020).
-</a><br>
-<a href="https://www.researchgate.net/publication/328137993_Action_Selection_for_Interactive_Object_Segmentation_in_Clutter" target="_blank" rel="noopener noreferrer">
-Patten, Timothy, Michael Zillich, and Markus Vincze. "Action selection for interactive object segmentation in clutter." In 2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 6297-6304. IEEE, 2018.
-</a><br>
-<b><a href="https://arxiv.org/abs/2011.08424" target="_blank" rel="noopener noreferrer">
-Xu, Danfei, Ajay Mandlekar, Roberto Martín-Martín, Yuke Zhu, Silvio Savarese, and Li Fei-Fei. "Deep Affordance Foresight: Planning Through What Can Be Done in the Future." arXiv preprint arXiv:2011.08424 (2020).
-</a></b><br>
-</div>
-
-
-
-<div class="sechighlight">
-
-<div class="container sec">
-<h2>Learning language through interaction</h2>
-
-<h3>Class 16: Grounded language learning
-</h3>
-<b><a href="https://arxiv.org/abs/2004.10151" target="_blank" rel="noopener noreferrer">
-Bisk, Yonatan, Ari Holtzman, Jesse Thomason, Jacob Andreas, Yoshua Bengio, Joyce Chai, Mirella Lapata et al. "Experience grounds language." arXiv preprint arXiv:2004.10151 (2020).
-</a></b><br>
-<a href="https://arxiv.org/abs/1803.08495" target="_blank" rel="noopener noreferrer">
-Chen, Kevin, Christopher B. Choy, Manolis Savva, Angel X. Chang, Thomas Funkhouser, and Silvio Savarese. "Text2shape: Generating shapes from natural language by learning joint embeddings." In Asian Conference on Computer Vision, pp. 100-116. Springer, Cham, 2018.
-</a><br>
-<a href="https://arxiv.org/abs/2009.01719" target="_blank" rel="noopener noreferrer">
-Hill, Felix, Olivier Tieleman, Tamara von Glehn, Nathaniel Wong, Hamza Merzic, and Stephen Clark. "Grounded Language Learning Fast and Slow." arXiv preprint arXiv:2009.01719 (2020).
-</a><br>
-<a href="https://arxiv.org/abs/1911.03219" target="_blank" rel="noopener noreferrer">
-Lair, Nicolas, Cédric Colas, Rémy Portelas, Jean-Michel Dussoux, Peter Ford Dominey, and Pierre-Yves Oudeyer. "Language Grounding through Social Interactions and Curiosity-Driven Multi-Goal Learning." arXiv preprint arXiv:1911.03219 (2019).
-</a><br>
-<a href="https://www.aclweb.org/anthology/D18-1285/" target="_blank" rel="noopener noreferrer">
-Ross, Candace, Andrei Barbu, Yevgeni Berzak, Battushig Myanganbayar, and Boris Katz. "Grounding language acquisition by training semantic parsers using captioned videos." In Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing, pp. 2647-2656. 2018.
-</a><br>
-<a href="https://ojs.aaai.org//index.php/aimagazine/article/view/2796" target="_blank" rel="noopener noreferrer">
-Suhr, Alane, Mike Lewis, James Yeh, and Yoav Artzi. "Evaluating Visual Reasoning Through Grounded Language Understanding." AI Magazine 39, no. 2 (2018): 45-52.
-</a><br>
-<a href="http://cs.brown.edu/~ngopalan/docs/learning-parse-natural.pdf" target="_blank" rel="noopener noreferrer">
-Williams, Edward C., Nakul Gopalan, Mine Rhee, and Stefanie Tellex. "Learning to parse natural language to grounded reward functions with weak supervision." In 2018 IEEE International Conference on Robotics and Automation (ICRA), pp. 1-7. IEEE, 2018.
-</a><br>
-
-
-<h3>Class 17: Language as a cognitive tool, emergent communication, programming language to natural communication
-</h3>
-<a href="https://arxiv.org/abs/2010.15896" target="_blank" rel="noopener noreferrer">
-Bullard, Kalesha, Franziska Meier, Douwe Kiela, Joelle Pineau, and Jakob Foerster. "Exploring Zero-Shot Emergent Communication in Embodied Multi-Agent Populations." arXiv preprint arXiv:2010.15896 (2020).
-</a><br>
-<b><a href="https://arxiv.org/abs/2002.09253" target="_blank" rel="noopener noreferrer">
-Colas, Cédric, Tristan Karch, Nicolas Lair, Jean-Michel Dussoux, Clément Moulin-Frier, Peter Ford Dominey, and Pierre-Yves Oudeyer. "Language as a Cognitive Tool to Imagine Goals in Curiosity-Driven Exploration." arXiv preprint arXiv:2002.09253 (2020).
-</a></b><br>
-<a href="https://arxiv.org/abs/2002.01093" target="_blank" rel="noopener noreferrer">
-Lowe, Ryan, Abhinav Gupta, Jakob Foerster, Douwe Kiela, and Joelle Pineau. "On the interaction between supervision and self-play in emergent communication." arXiv preprint arXiv:2002.01093 (2020).
-</a><br>
-<a href="https://arxiv.org/pdf/2007.05060.pdf" target="_blank" rel="noopener noreferrer">
-Pu, Yewen, Kevin Ellis, Marta Kryven, Josh Tenenbaum, and Armando Solar-Lezama. "Program Synthesis with Pragmatic Communication." arXiv preprint arXiv:2007.05060 (2020).</a><br>
-<a href="https://arxiv.org/abs/1704.06956" target="_blank" rel="noopener noreferrer">
-Wang, Sida I., Samuel Ginn, Percy Liang, and Christoper D. Manning. "Naturalizing a programming language via interactive learning." arXiv preprint arXiv:1704.06956 (2017).</a><br>
-</div>
-</div>
-
-
-<div class="container sec">
-<h2>Higher-level inquiry through interaction</h2>
-<h3>Class 18, part 1: Optimal experimental design, active learning, and their relation to intrinsically-motivated RL
-</h3>
-<a href="https://arxiv.org/abs/2010.11917" target="_blank" rel="noopener noreferrer">
-Chen, Annie S., HyunJi Nam, Suraj Nair, and Chelsea Finn. "Batch Exploration with Examples for Scalable Robotic Reinforcement Learning." arXiv preprint arXiv:2010.11917 (2020).
-</a><br>
-<a href="http://www.ru.ac.bd/stat/wp-content/uploads/sites/25/2019/03/502_01_00_Cox-Reid-The-Theory-of-the-Design-of-Experiments-CRC-Press-2001-1.pdf" target="_blank" rel="noopener noreferrer">
-Cox, David Roxbee, and Nancy Reid. The theory of the design of experiments. CRC Press, 2000.
-</a><br>
-<b><a href="https://arxiv.org/abs/1807.02811" target="_blank" rel="noopener noreferrer">
-Frazier, Peter I. "A tutorial on bayesian optimization." arXiv preprint arXiv:1807.02811 (2018).
-</a></b><br>
-Settles, Burr. Active learning.<br>
-
-<h3>Class 18, part 2: Human curiosity and internet search
-</h3>
-<a href="https://link.springer.com/article/10.3758/s13423-018-1470-5" target="_blank" rel="noopener noreferrer">
-Coenen, Anna, Jonathan D. Nelson, and Todd M. Gureckis. "Asking the right questions about the psychology of human inquiry: Nine open challenges." Psychonomic Bulletin & Review 26, no. 5 (2019): 1548-1587.
-</a><br>
-<b><a href="https://www.nature.com/articles/s41562-020-00985-7" target="_blank" rel="noopener noreferrer">
-Lydon-Staley, David M., Dale Zhou, Ann Sizemore Blevins, Perry Zurn, and Danielle S. Bassett. "Hunters, busybodies and the knowledge network building associated with deprivation curiosity." Nature human behaviour (2020): 1-10.
-</a></b><br>
-<a href="https://arxiv.org/abs/2006.02949" target="_blank" rel="noopener noreferrer">
-Zhou, Dale, David M. Lydon-Staley, Perry Zurn, and Danielle S. Bassett. "The growth and form of knowledge networks by kinesthetic curiosity." arXiv preprint arXiv:2006.02949 (2020).
-</a><br>
-</div>
-
 
